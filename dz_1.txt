@@ -1,0 +1,1 @@
+Прочитал в книге Grokking Algorithms: An illustrated guide for programmers and other curious people про алгоритмы и О-большое.
