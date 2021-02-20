@@ -1,4 +1,4 @@
-package geekbrains_java_algorithms_2021.DZ_2;
+package DZ_2;
 
 public interface Array<E> {
 
@@ -25,4 +25,6 @@ public interface Array<E> {
     int size();
 
     void display();
+
+
 }

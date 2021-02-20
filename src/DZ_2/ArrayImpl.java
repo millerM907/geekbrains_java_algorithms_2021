@@ -1,8 +1,8 @@
-package geekbrains_java_algorithms_2021.DZ_2;
+package DZ_2;
 
 import java.util.Arrays;
 
-public class ArrayImpl<E extends Comparable<? super E>> implements Array<E> {
+public class ArrayImpl<E extends Object & Comparable<? super E>> implements Array<E> {
 
     protected static final int DEFAULT_CAPACITY = 8;
 
@@ -16,7 +16,7 @@ public class ArrayImpl<E extends Comparable<? super E>> implements Array<E> {
 
     @SuppressWarnings("unchecked")
     public ArrayImpl(int initialCapacity) {
-        this.data = (E[]) new Comparable[initialCapacity];
+        this.data = (E[]) new Object[initialCapacity];
     }
 
     //O(1) -> O(n)
@@ -126,6 +126,7 @@ public class ArrayImpl<E extends Comparable<? super E>> implements Array<E> {
         }
         return -1;
     }
+
 
     @Override
     public boolean isEmpty() {
